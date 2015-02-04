@@ -5,7 +5,10 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # export path for RabbitMQ
-export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/bin
+
+#export path for Tex
+export PATH=/usr/texbin:$PATH
 
 # run my 
 source ~/.bashrc

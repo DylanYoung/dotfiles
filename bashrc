@@ -1,10 +1,10 @@
 #
-# Dawson Reid
+# Casey Meijer
 #
 
 # python virtualenvwrapper variables
-export WORKON_HOME=$HOME/.virtualenvs/
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.virtualenvs/
+# source /usr/local/bin/virtualenvwrapper.sh
 
 
 # enable colors on Mac
