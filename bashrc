@@ -50,3 +50,14 @@ alias cb='git checkout'
 alias ginit='git init && touch README.md && cat ~/.gitignore_global > .gitignore && add README.md .gitignore && commit -m "Initial commit"'
 
 
+function chrome(){
+	if [ ${1:0:4} == "http" ]
+	then
+		open /Applications/Google\ Chrome.app "$1";
+	elif [[ ${1: -4} == ".com" || ${1: -3} == ".ca" || ${1:0:4} == "www." ]]	
+	then
+		open /Applications/Google\ Chrome.app "http://$1";
+	else
+		open /Applications/Google\ Chrome.app "https://www.google.ca/search?q=$1";
+	fi
+}
