@@ -61,3 +61,8 @@ function chrome(){
 		open /Applications/Google\ Chrome.app "https://www.google.ca/search?q=$1";
 	fi
 }
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder /System/Library/CoreServices/Finder.app'
+alias hide='chflags hidden'
+alias show='chflags nohidden'
