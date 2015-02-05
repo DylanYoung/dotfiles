@@ -40,16 +40,17 @@ alias commit='git commit'
 alias push='git push'
 alias diff='git diff'
 alias status='git status'
-alias pull='git pull'
+alias pull='git pull --follow-tags'
 alias add='git add'
 alias fetch='git fetch'
 alias radd='git remote add'
 alias br='git branch'
-alias mkbr='git checkout -b'
 alias rmbr='git branch -d'
 alias cb='git checkout'
 alias ginit='git init && touch README.md && cat ~/.gitignore_global > .gitignore && add README.md .gitignore && commit -m "Initial commit"'
-
+alias tag='git tag'
+alias pick='git cherry-pick'
+alias rebase='git rebase -i'
 
 function chrome(){
 	if [ ${1:0:4} == "http" ]
